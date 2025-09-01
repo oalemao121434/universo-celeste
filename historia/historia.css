@@ -1,0 +1,91 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #4a90e2;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+section:last-of-type p:last-of-type {
+    margin-bottom: 2rem; /* Adiciona espaçamento inferior ao último parágrafo */
+}
+
+footer {
+    background-color: #4a90e2; /* Cor de fundo azul */
+    color: white; /* Texto branco */
+    text-align: center; /* Centralizar o texto */
+    padding: 1rem 0; /* Espaçamento interno */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    position: fixed; /* Fixar no rodapé */
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remover margens */
+    font-weight: bold; /* Deixar o texto em negrito */
+}
+
+footer a {
+    color: #ffdd57; /* Cor do link */
+    text-decoration: none; /* Remover sublinhado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}

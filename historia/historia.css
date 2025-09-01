@@ -33,59 +33,25 @@ section:last-of-type p:last-of-type {
     margin-bottom: 2rem; /* Adiciona espaçamento inferior ao último parágrafo */
 }
 
-footer {
-    background-color: #4a90e2; /* Cor de fundo azul */
-    color: white; /* Texto branco */
-    text-align: center; /* Centralizar o texto */
-    padding: 1rem 0; /* Espaçamento interno */
-    font-size: 1rem; /* Tamanho da fonte */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
-    position: fixed; /* Fixar no rodapé */
-    bottom: 0;
-    width: 100%;
+.site-footer {
+    background-color: #3016a3;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
 }
 
-footer p {
-    margin: 0; /* Remover margens */
-    font-weight: bold; /* Deixar o texto em negrito */
+.site-footer a {
+    color: #0d6efd;
+    text-decoration: none;
+    margin: 0 0.5rem;
 }
 
-footer a {
-    color: #ffdd57; /* Cor do link */
-    text-decoration: none; /* Remover sublinhado */
+.site-footer a:hover {
+    text-decoration: underline;
 }
 
-footer a:hover {
-    text-decoration: underline; /* Adicionar sublinhado ao passar o mouse */
-}
-
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    body {
-        padding: 0 1rem;
-    }
-
-    header {
-        padding: 1rem;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    footer {
-        font-size: 0.9rem;
-    }
+.social-media {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
 }

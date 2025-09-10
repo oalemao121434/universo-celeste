@@ -29,6 +29,35 @@ header {
     width: 80%;
     max-width: 800px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #00ffea;
+    text-shadow: 0 0 5px #00ffea;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.nav-links a {
+    color: #00ffea;
+    text-decoration: none;
+    font-weight: 500;
+    text-shadow: 0 0 5px #00ffea;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00fff0;
 }
 
 header::before {
@@ -148,4 +177,71 @@ p {
 .social-media {
     margin-top: 0.5rem;
     font-size: 0.9rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        width: 90%;
+    }
+
+    .menu-toggle {
+        display: block;
+        align-self: flex-end;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #00ffea;
+    }
+
+    main {
+        padding: 1rem;
+        margin: 0.5rem;
+        max-width: none;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .site-footer {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        width: 90%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }
